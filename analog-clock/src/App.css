@@ -1,0 +1,54 @@
+:root {
+  --second: 0;
+  --minute: 0;
+  --hour: 0;
+}
+
+.analog-clock {
+  width: 800px;
+  height: 800px;
+  background-color: whitesmoke;
+  position: relative;
+  border-radius: 50%;
+  margin: auto;
+}
+
+.clock-seconds {
+  width: 5px;
+  height: 200px;
+  background: black;
+  top: calc(50% - 200px);
+  left: calc(50% - 2px);
+  rotate: var(--second);
+  position: absolute;
+  transform-origin: bottom;
+  border-radius: 50%;
+}
+
+.clock-minutes {
+  width: 12px;
+  height: 200px;
+  background: black;
+  top: calc(50% - 200px);
+  left: calc(50% - 6px);
+  rotate: var(--minute);
+  position: absolute;
+  transform-origin: bottom;
+  border-radius: 50%;
+}
+
+.clock-hour {
+  width: 18px;
+  height: 200px;
+  background: black;
+  top: calc(50% - 200px);
+  left: calc(50% - 10px);
+  rotate: var(--hour);
+  position: absolute;
+  transform-origin: bottom;
+  border-radius: 50%;
+}
+
+body {
+  padding: 2px;
+}
